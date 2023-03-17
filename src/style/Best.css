@@ -28,6 +28,23 @@
 .best img {
     width: 100%;
 }
+.row{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 0.5fr;
+   grid-template-rows: auto;
+   justify-content: center;
+   align-items: center;
+   background-color: bisque;
+   max-width: 1240px;
+   gap: 20px;
+   padding: 20px;
+}
+.col{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width:940px) {
     .best {
