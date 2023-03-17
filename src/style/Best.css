@@ -30,22 +30,65 @@
 }
 .row{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 0.5fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-template-rows: auto;
    justify-content: center;
    align-items: center;
-   background-color: bisque;
+   background-color: white;
    max-width: 1240px;
    gap: 20px;
    padding: 20px;
+   margin: 10px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .col{
-    border: 1px solid black;
+    border: 1px solid rgb(192, 191, 191);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 15px;
+    height: 50px;
+    overflow: hidden;
+}
+.col:hover{
+    cursor: pointer;
 }
 
+.col .icon{
+    color: #5651e5;
+    font-size: 20px;
+}
+.col .icons{
+    color: #5651e5;
+    font-size: 15px;
+}
+.col .city,.col .house,.col .price{
+    font-size: 14px;
+    padding:0px 30px 0px 15px;
+}
+.col .city p ,.col .house p,.col .price p{
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2px;
+}
+.col#searchbtn{
+    background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border: 2px solid  #709dff;
+}
+.col#searchbtn:hover{
+    background-image: linear-gradient(45deg, #709dff  0%, #5651e5 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border: 2px solid  #709dff;
+    transition: 1s;
+}
 @media screen and (max-width:940px) {
     .best {
         margin: 1rem 0;
@@ -59,6 +102,28 @@
     .best .container {
         grid-template-columns: 1fr;
         grid-gap: .5rem;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+     }
+     .col{
+        border: 1px solid rgb(192, 191, 191);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px 15px;
+        height: 50px;
+        overflow: hidden;
     }
 }
 

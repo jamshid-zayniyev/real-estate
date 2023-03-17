@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import {AiOutlineDown, AiOutlineHome, AiOutlineSearch, AiOutlineUp} from "react-icons/ai"
-import {GrLocation} from "react-icons/gr"
+import {AiFillCaretDown, AiFillCaretUp, AiOutlineDown, AiOutlineHome, AiOutlineSearch, AiOutlineUp} from "react-icons/ai"
+import {HiLocationMarker} from "react-icons/hi"
+import {FaHome} from "react-icons/fa"
+import {IoMdCash} from "react-icons/io"
 import {BsCashCoin} from "react-icons/bs"
 import Apt1 from '../assets/apt1.jpeg'
 import Apt2 from '../assets/apt2.jpeg'
@@ -19,30 +21,30 @@ const Best = () => {
             <div className='SelectDropdown'>
                 <div className='row'>
                     <div className='col'>
-                        <span><GrLocation/></span>
-                        <div>
-                            <p>Uzbekistan</p>
+                        <span><HiLocationMarker className='icon'/></span>
+                        <div className='city'>
+                            <p>Tashkent</p>
                             Select your place
                         </div>
-                        <span>{city ? <AiOutlineUp/> : <AiOutlineDown/>}</span>
+                        <span>{city ? <AiFillCaretUp className='icons'/> : <AiFillCaretDown className='icons'/>}</span>
                     </div>
                     <div className='col'>
-                        <span><AiOutlineHome/></span>
-                        <div>
-                            <p>Uzbekistan</p>
-                            Select your place
+                        <span><FaHome className='icon'/></span>
+                        <div className='house'>
+                            <p>House</p>
+                            Choose property type
                         </div>
-                        <span>{house ? <AiOutlineUp/> : <AiOutlineDown/>}  </span>
+                        <span>{house ? <AiFillCaretUp className='icons'/> : <AiFillCaretDown className='icons'/>}  </span>
                     </div>
                     <div className='col'>
-                        <span><BsCashCoin/></span>
-                        <div>
-                            <p>Uzbekistan</p>
-                            Select your place
+                        <span><IoMdCash className='icon'/></span>
+                        <div className='price'>
+                            <p>Price range (any)</p>
+                            Choose price range
                         </div>
-                        <span>{price ? <AiOutlineUp/> : <AiOutlineDown/>}</span>
+                        <span>{price ? <AiFillCaretUp className='icons'/> : <AiFillCaretDown className='icons'/>}</span>
                     </div>
-                    <div className='col'> <AiOutlineSearch/> </div>
+                    <div className='col' id='searchbtn'> <div>Qidirish</div></div>
                     
                 </div>
             </div>
