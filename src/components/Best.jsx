@@ -27,6 +27,7 @@ const Best = () => {
                             Select your place
                         </div>
                         <span>{city ? <AiFillCaretUp className='icons'/> : <AiFillCaretDown className='icons'/>}</span>
+                        
                     </div>
                     <div className='col'>
                         <span><FaHome className='icon'/></span>
