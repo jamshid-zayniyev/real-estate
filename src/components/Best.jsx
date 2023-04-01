@@ -23,7 +23,14 @@ const Best = () => {
                     <div className='col'>
                         <span><HiLocationMarker className='icon'/></span>
                         <div className='city'>
-                            <p>Tashkent</p>
+                            <div>
+                            <select name="" id="">
+                                <option value="1">a 1 s</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            </div>
                             Select your place
                         </div>
                         <span>{city ? <AiFillCaretUp className='icons'/> : <AiFillCaretDown className='icons'/>}</span>
